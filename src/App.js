@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import logo from "./logo.svg"
+import Inputbar from "./components/Inputbar"
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="container d-flex flex-column justify-content-center align-items-center">
+        <img className="logo img-fluid mb-3" src={logo} alt="logo" />
+        <h4 className="text-light">Add items to your list</h4>
+        <Inputbar></Inputbar>
+      </div>
+    </>
   );
 }
 
